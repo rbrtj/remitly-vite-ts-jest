@@ -1,8 +1,65 @@
-#app {
-  color: #2c3e50;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  margin-top: 60px;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin-top: 250px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-image{
+  width: 10%;
+  height: 20px;
+  margin-left: 5px;
+  border-radius: 3px;
+}
+
+input {
+  border: none;
+  width: 65%;
+  margin-left: 5px;
+  background-color: 	#D3D3D3;
+}
+
+input:focus{
+  outline: none;
+}
+
+.input-container {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+  background-color: 	#D3D3D3;
+  width: 250px;
+  height: 30px;
+  align-items: center;
+}
+
+.input-currency{
+  margin-left: 50px;
+  align-items: end;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.valueRate{
+  font-weight: bold;
 }

@@ -2,12 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Vite + TS</title>
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/index.ts"></script>
+    <div class="container">
+      <div>
+        <span>You send</span>
+        <div class="input-container">
+          <img src="./src/public/images/uk.jpg" class="input-image" />
+          <input id="from-input" type="number" class="currency-input" placeholder="0" />
+          <span class="input-currency">GBP</span>
+        </div>
+      </div>
+      <div>
+        <span>They receive</span>
+        <div class="input-container">
+          <img src="./src/public/images/pl.jpg" class="input-image" />
+          <input id="to-input" type="number" class="currency-input" placeholder="0" />
+          <span class="input-currency">PLN</span>
+        </div>
+      </div>
+      <p class="valuesExchangeRate">1 GBP = <span class="valueRate"></span></p>
+      <p class="error-info"></p>
+    </div>
+    <script type="module" src="/src/recalculateCurrencies.ts"></script>
   </body>
 </html>
