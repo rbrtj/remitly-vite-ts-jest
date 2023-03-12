@@ -116,6 +116,6 @@ describe("Exchange rate app", () => {
   test("get focused input value", () => {
     const inputElement = document.createElement("input");
     inputElement.value = "10";
-    expect(getFocusedInputValue(inputElement).toBe(10));
+    expect(getFocusedInputValue(inputElement)).toBe(10);
   });
 });
